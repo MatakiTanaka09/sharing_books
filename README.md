@@ -5,6 +5,12 @@
 ## Build Setup
 
 ``` bash
+# git clone
+git clone https://github.com/MatakiTanaka09/vue_starter.git
+
+# move the working-directory
+cd vue_starter
+
 # install dependencies
 npm install
 
