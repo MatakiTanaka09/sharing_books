@@ -7,16 +7,23 @@ import store from '@/store/store'
 import { sync } from 'vuex-router-sync'
 
 // You can choose css flamework which you uses buefy(bulma) or Bootstrap
-import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
-Vue.use(Buefy)
+//
+//
+// @buefy
+//
+// import Buefy from 'buefy'
+// import 'buefy/dist/buefy.css'
+// Vue.use(Buefy)
 
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-Vue.use(BootstrapVue)
+//
+// @BootstrapVue
+//
+// import BootstrapVue from 'bootstrap-vue'
+// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
+// Vue.use(BootstrapVue)
 
-sync(store, router)
+//sync(store, router)
 
 Vue.config.productionTip = false
 
