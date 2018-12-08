@@ -1,4 +1,4 @@
-# new_sharebnb
+# vue_quick_starter
 
 > A Vue.js project
 
