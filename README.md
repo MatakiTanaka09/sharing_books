@@ -1,16 +1,10 @@
-# vue_quick_starter
+# Share Books and Borrow
 
-> A Vue.js project
+> A Vue.js project. it calls "sharebnb"
 
 ## Build Setup
 
 ``` bash
-# git clone
-git clone https://github.com/MatakiTanaka09/vue_starter.git
-
-# move the working-directory
-cd vue_starter
-
 # install dependencies
 npm install
 
