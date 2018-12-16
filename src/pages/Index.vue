@@ -15,13 +15,13 @@
             </div>
         </div>
     </div>
-    <div class="hero is-medium is-bold is-large">
+    <div v-if="!userStatus" class="hero is-medium is-bold is-large">
         <div class="hero-body">
             <div class="container is-large">
                 <p class="mb">
                     {{ loginDescription }}
                 </p>
-                <a class="button is-rounded">Login</a>
+                <Auth />
             </div>
         </div>
     </div>
@@ -29,14 +29,31 @@
 </template>
 
 <script>
+import Auth from '@/components/TheAuth'
+import Firebase from '@/api/firebase/firebase'
+
 export default {
     name: 'Index',
+    components: {
+        Auth
+    },
     data () {
         return {
             title: 'Welcome to sharebnb!',
             subtitle: 'Share Books and Borrow',
             serviceDesc: '気軽に本が借りられて、安全に本を貸す事ができるサービス',
             loginDescription: 'さあ、さっそく始めてみよう！',
+        }
+    },
+    created: function() {
+        Firebase.onAuth()
+    },
+    computed: {
+        user() {
+            return this.$store.getters.user
+        },
+        userStatus() {
+            return this.$store.getters.isSignedIn
         }
     }
 }

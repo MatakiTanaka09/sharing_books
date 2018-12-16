@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar is-success" role="navigation" aria-label="main navigation">
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <router-link class="navbar-item" to="/">
             <strong>sharebnb</strong>
@@ -25,24 +25,20 @@
         </div>
 
         <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-info">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
-                </div>
-            </div>
+            <TheAuth />
         </div>
     </div>
 </nav>
 </template>
 
 <script>
+import TheAuth from '@/components/TheAuth'
+
 export default {
-    name: 'TheHeader'
+    name: 'TheHeader',
+    components: {
+        TheAuth
+    }
 }
 
 </script>
